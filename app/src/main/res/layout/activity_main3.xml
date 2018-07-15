@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/timer"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/question"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/question"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintStart_toEndOf="@+id/timer"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="296dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/timer"
+        android:text="@string/score"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/question"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="372dp"
+        android:layout_height="259dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="166dp"
+            android:layout_height="96dp"
+            android:text="@string/ops1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="166dp"
+            android:layout_height="96dp"
+            android:text="@string/ops2"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="162dp"
+            android:layout_height="89dp"
+            android:text="@string/ops3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="336dp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="162dp"
+            android:layout_height="93dp"
+            android:text="@string/ops4"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="334dp" />
+    </android.support.v7.widget.GridLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="timer">timer</string>
+    <string name="question">question</string>
+    <string name="name">Name</string>
+    <string name="ops1">ops1</string>
+    <string name="ops2">ops2</string>
+    <string name="ops3">ops3</string>
+    <string name="ops4">ops4</string>
+    <string name="score">score</string>
+</resources>
